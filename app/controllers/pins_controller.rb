@@ -15,7 +15,7 @@ class PinsController < ApplicationController
   end
 
   def new
-    @pin = current_user.pins.new
+    @pin = current_user.pins.build
     respond_with(@pin)
   end
 
